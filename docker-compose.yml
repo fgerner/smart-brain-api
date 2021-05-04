@@ -8,6 +8,7 @@ services:
     working_dir: /app
     environment:
       POSTGRES_URI: postgres://fred:password@postgres:5432/smart-brain-docker
+      JWT_SECRET: 'secret'
     ports:
       - "3000:3000"
     volumes:
